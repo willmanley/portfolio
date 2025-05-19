@@ -8,9 +8,9 @@
 .global-header {
   display: flex;
   align-items: center; /* Vertically center content within the header */
-  padding-top: 20px; /* Space from the top of the page */
+  padding-top: 0px; /* Space from the top of the page */
   padding-left: 20px; /* Space from the left of the page */
-  padding-right: 20px;
+  padding-right: 0px;
   justify-content: flex-start;
 }
 
@@ -18,20 +18,13 @@
 .header-left {
   display: flex;
   align-items: center;
+  padding-right: 20px;
 }
 
 /* Profile Picture Container Styling */
 .global-header .profile-pic-container {
   margin-right: 20px; /* Space between the profile picture and the text */
 }
-
-/* Text Container Styling for Name and Job Title */
-/*.global-header .text-container {
-/*  display: flex;
-/*  flex-direction: column; /* Stack name and job title vertically */
-/*  justify-content: center; /* Center the text vertically within its container */
-/*  line-height: 1; /* Reduce line height to bring elements closer */
-/*} */
 
 .global-header .text-container {
   display: flex;
@@ -55,7 +48,7 @@
 
 /* Navbar Styling */
 nav {
-  margin-top: 20px; /* Space between the header and the navbar */
+  margin-top: 0px; /* Space between the header and the navbar */
 }
 
 body {
@@ -89,4 +82,17 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+/* Banner Image Fills Remaining Header Space */
+.header-banner {
+  flex-grow: 1;
+  height: 150px; /* Match profile image height */
+  background-image: url("../assets/imgs/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  border: none;
 }

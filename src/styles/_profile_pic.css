@@ -2,8 +2,8 @@
 
 /* Profile Picture Container */
 .profile-pic-container {
-  width: 150px; /* Circle size */
-  height: 150px;
+  width: 140px; /* Circle size */
+  height: 140px;
   border-radius: 50%; /* Makes the container round */
   overflow: hidden; /* Ensures the image stays inside the circle */
 }
