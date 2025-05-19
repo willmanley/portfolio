@@ -1,0 +1,14 @@
+# Blacklist everything unless explicitly whitelisted.
+*
+
+# Explicitly whitelist these directories (and certain contents).
+!src/
+!src/**
+!infra/
+!infra/*
+
+# Explicitly whitelist these root files.
+!README.md
+!.gitignore
+!LICENSE
+!Makefile

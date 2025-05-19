@@ -1,0 +1,153 @@
+<!-- An HTML template, defining the structure of the Index (Home) page. -->
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- Links to CSS styling consumed by the Index (Home) page. -->
+    <link rel="stylesheet" href="styles/global.css" />
+    <!-- Link to global script. -->
+    <!--    <link rel="preload" href="scripts/global.js" as="script">-->
+    <!--    <script src="scripts/global.js" defer></script>-->
+  </head>
+  <!-- Global Header (to be injected at the top of every page). -->
+  <header class="global-header">
+    <!-- Left section with profile picture and text -->
+    <div class="header-left">
+      <!-- Circular profile picture container. -->
+      <div class="profile-pic-container">
+        <img
+          src="assets/imgs/me.jpeg"
+          alt="William Manley"
+          class="profile-pic"
+        />
+      </div>
+
+      <!-- Name & Job Title text container. -->
+      <div class="text-container">
+        <h1>William Manley</h1>
+        <p>Machine Learning Engineer</p>
+        <p>MSc Mathematical Sciences</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Global Navbar (to be injected just below the header of every page). -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <body>
+    <!-- Global content (header) will be injected at the top -->
+    <!--    <div id="global-header"></div>-->
+
+    <!-- Local page content goes here. -->
+    <main id="main-content">
+      <h2>Welcome to My Digital Portfolio</h2>
+      <p>
+        Thank you for visiting my digital portfolio! I created this space to
+        serve as an interactive extension of my resumé, with the aim to offer a
+        more comprehensive insight into my professional expertise,
+        accomplishments, and capabilities.
+      </p>
+      <p>
+        Beyond formal qualifications, this portfolio provides a more intimate
+        glimpse into who I am, what drives me as a Machine Learning Engineer,
+        and the values that shape my work. Here, you'll find visual examples of
+        projects I've contributed to, direct links to completed work and the
+        motivations behind these endeavors. I encourage you to explore this
+        space and gain a deeper understanding of the value I can bring to your
+        organization or project.
+      </p>
+      <p>
+        Please note that this portfolio is intended to be ever-evolving and will
+        be built out over time.
+      </p>
+
+      <h2>What You Can Find Here</h2>
+      <p>
+        This webpage has been organized to help you easily find exactly what
+        you're looking for:
+      </p>
+      <ul>
+        <li>
+          <strong>About Me</strong>
+          – Learn more about who I am: my background, experience, values and
+          outlook.
+        </li>
+        <li>
+          <strong>Certifications</strong>
+          – Review my professional qualifications and ongoing commitment to
+          keeping up to date with industry standards and technologies in the
+          rapidly evolving field of ML.
+        </li>
+        <li>
+          <strong>Projects</strong>
+          – Dive into detailed case studies of my professional, research and
+          personal projects. I have aimed to provide a snapshot of the problems
+          I have worked on, the solutions I have developed, and the
+          results/impact of those efforts.
+        </li>
+        <li>
+          <strong>Contact</strong>
+          – Connect with me directly to discuss opportunities, collaborations,
+          or just to say hello.
+        </li>
+      </ul>
+    </main>
+
+    <!-- Global content (footer) will be injected at the bottom -->
+    <!--    <div id="global-footer"></div>-->
+    <!-- Global Footer (to be injected at the bottom of every page). -->
+    <footer class="global-footer">
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a
+          href="https://github.com/willmanley"
+          class="social-icon"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="GitHub"
+        >
+          <img src="assets/imgs/icons/github.svg" alt="GitHub" />
+        </a>
+        <a
+          href="https://linkedin.com/in/williampmanley"
+          class="social-icon"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="LinkedIn"
+        >
+          <img src="assets/imgs/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a
+          href="https://upwork.com/YourUsername"
+          class="social-icon"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="UpWork"
+        >
+          <img src="assets/imgs/icons/upwork.svg" alt="UpWork" />
+        </a>
+        <a
+          href="https://www.credly.com/users/william-manley.9b08b9b6"
+          class="social-icon"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Credly"
+        >
+          <img src="assets/imgs/icons/credly.svg" alt="Credly" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
