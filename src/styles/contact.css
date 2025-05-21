@@ -1,6 +1,14 @@
 /* A style sheet, defining styling for components local to the Contact page. */
 @import url("_variables.css");
 
+/* Horizontal dividers between sections */
+.section-divider {
+  border: 0;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 0px 0;
+}
+
 #main-content {
   padding: 0rem;
 }
@@ -62,7 +70,11 @@
 .submit-btn {
   display: block;
   margin: 0 auto;
-  background: linear-gradient(to right, var(--primary-color), var(--primary-color));
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--primary-color)
+  );
   color: var(--accent-color);
   border: none;
   padding: 0.75rem 1.5rem;
@@ -70,7 +82,9 @@
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .submit-btn:hover {

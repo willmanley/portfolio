@@ -49,37 +49,72 @@
     <!-- Local page content goes here. -->
     <main id="main-content">
       <h2>Contact Me</h2>
-      <p class="contact-intro">Have a question or want to work together? Fill out the form below to get in touch.</p>
+      <hr class="section-divider" />
+      <p class="contact-intro">
+        Have a question or want to work together? Fill out the form below to get
+        in touch.
+      </p>
 
       <div class="contact-container">
-        <form action="https://formsubmit.co/william.manley01@gmail.com" method="POST" class="contact-form">
+        <form
+          action="https://formsubmit.co/william.manley01@gmail.com"
+          method="POST"
+          class="contact-form"
+        >
           <!-- Honeypot to prevent spam. -->
-          <input type="text" name="_honey" style="display: none;">
+          <input type="text" name="_honey" style="display: none" />
 
           <!-- Disable captcha. -->
-          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_captcha" value="false" />
 
           <!-- Success page after submission. -->
-          <input type="hidden" name="_next" value="https://trained-by-will.com/thanks.html">
+          <input
+            type="hidden"
+            name="_next"
+            value="https://trained-by-will.com/thanks.html"
+          />
 
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
           </div>
 
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="your.email@example.com" required>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="your.email@example.com"
+              required
+            />
           </div>
 
           <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" name="subject" id="subject" placeholder="How can I help you?">
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="How can I help you?"
+            />
           </div>
 
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea name="message" id="message" rows="5" placeholder="Your message here..." required></textarea>
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              placeholder="Your message here..."
+              required
+            ></textarea>
           </div>
 
           <button type="submit" class="submit-btn">Submit</button>

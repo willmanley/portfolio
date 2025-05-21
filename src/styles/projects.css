@@ -1,1 +1,55 @@
 /* A style sheet, defining styling for components local to the Projects page. */
+@import url("./_carousel.css");
+@import url("./_variables.css");
+
+.section-divider {
+  border: 0;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 0px 0;
+}
+
+.project-section {
+  padding: 0 0;
+  margin-bottom: 0px;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.project-github {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 0px;
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.project-github .github-icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.project-github:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-section h3 {
+  border-left: 4px solid var(--accent-color);
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.project-section p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}

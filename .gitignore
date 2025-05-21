@@ -12,3 +12,6 @@
 !.gitignore
 !LICENSE
 !Makefile
+
+# Explicitly blacklist certain file types for the entire repo.
+**/.DS_Store

@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <!-- Links to CSS styling consumed by the Projects page. -->
     <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
   </head>
   <!-- Global Header (to be injected at the top of every page). -->
   <header class="global-header">
@@ -48,11 +49,78 @@
     <!-- Main page content goes here -->
     <main id="main-content">
       <h2>My Projects</h2>
-      <p>Blah Blah Blah.</p>
+
+      <hr class="section-divider" />
+
+      <section class="project-section">
+        <h3>Project 1</h3>
+        <a
+          href="https://github.com/willmanley"
+          class="project-github"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="assets/imgs/icons/github.svg"
+            alt="GitHub"
+            class="github-icon"
+          />
+          Click here to view source code.
+        </a>
+        <p>A description of project 1.</p>
+
+        <div class="carousel">
+          <button class="carousel-btn prev">&#10094;</button>
+          <div class="carousel-track-container">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="assets/imgs/me.jpeg" alt="Project 1 Image 1" />
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/imgs/banner.jpg" alt="Project 1 Image 2" />
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn next">&#10095;</button>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <section class="project-section">
+        <h3>Project 2</h3>
+        <a
+          href="https://github.com/willmanley"
+          class="project-github"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="assets/imgs/icons/github.svg"
+            alt="GitHub"
+            class="github-icon"
+          />
+          Click here to view source code.
+        </a>
+        <p>A description of project 2.</p>
+
+        <div class="carousel">
+          <button class="carousel-btn prev">&#10094;</button>
+          <div class="carousel-track-container">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="assets/imgs/banner.jpg" alt="Project 2 Image 1" />
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/imgs/t.jpg" alt="Project 2 Image 2" />
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn next">&#10095;</button>
+        </div>
+      </section>
     </main>
 
-    <!-- Global content (footer) will be injected at the bottom -->
-    <!--    <div id="global-footer"></div>-->
     <!-- Global Footer (to be injected at the bottom of every page). -->
     <footer class="global-footer">
       <!-- Social Icons -->
@@ -95,5 +163,6 @@
         </a>
       </div>
     </footer>
+    <script src="scripts/carousel.js"></script>
   </body>
 </html>

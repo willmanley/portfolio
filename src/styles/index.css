@@ -1,1 +1,9 @@
 /* A style sheet, defining styling for components local to the Index page. */
+@import url("./_variables.css");
+/* Horizontal dividers between sections */
+.section-divider {
+  border: 0;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 0px 0;
+}
