@@ -30,5 +30,5 @@ nav ul li a:hover {
 
 nav ul li a.active {
   color: var(--primary-color);
-  font-weight: bold; /* optional - makes it stand out more */
+  font-weight: bold;
 }

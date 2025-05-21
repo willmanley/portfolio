@@ -1,7 +1,5 @@
 <!-- An HTML template, defining the structure of the Index (Home) page. -->
-
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,9 +7,7 @@
     <title>Contact</title>
     <!-- Links to CSS styling consumed by the Index (Home) page. -->
     <link rel="stylesheet" href="styles/global.css" />
-    <!-- Link to global script. -->
-    <!--    <link rel="preload" href="scripts/global.js" as="script">-->
-    <!--    <script src="scripts/global.js" defer></script>-->
+    <link rel="stylesheet" href="styles/contact.css" />
   </head>
   <!-- Global Header (to be injected at the top of every page). -->
   <header class="global-header">
@@ -50,17 +46,47 @@
   </nav>
 
   <body>
-    <!-- Global content (header) will be injected at the top -->
-    <!--    <div id="global-header"></div>-->
-
     <!-- Local page content goes here. -->
     <main id="main-content">
-      <h2>Welcome to My Portfolio</h2>
-      <p>This is a work in progress!!!</p>
+      <h2>Contact Me</h2>
+      <p class="contact-intro">Have a question or want to work together? Fill out the form below to get in touch.</p>
+
+      <div class="contact-container">
+        <form action="https://formsubmit.co/william.manley01@gmail.com" method="POST" class="contact-form">
+          <!-- Honeypot to prevent spam. -->
+          <input type="text" name="_honey" style="display: none;">
+
+          <!-- Disable captcha. -->
+          <input type="hidden" name="_captcha" value="false">
+
+          <!-- Success page after submission. -->
+          <input type="hidden" name="_next" value="https://trained-by-will.com/thanks.html">
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="your.email@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" placeholder="How can I help you?">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" placeholder="Your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
     </main>
 
-    <!-- Global content (footer) will be injected at the bottom -->
-    <!--    <div id="global-footer"></div>-->
     <!-- Global Footer (to be injected at the bottom of every page). -->
     <footer class="global-footer">
       <!-- Social Icons -->

@@ -1,0 +1,55 @@
+/* A style sheet, defining styling for components local to the Thanks page. */
+@import url("_variables.css");
+
+#main-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.thank-you-card {
+  background-color: var(--accent-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 500px;
+  margin: 3rem auto;
+}
+
+.thank-you-card h2 {
+  color: var(--accent-font-color);
+  margin-bottom: 1rem;
+}
+
+.thank-you-card p {
+  color: var(--accent-font-color);
+  margin-bottom: 2rem;
+}
+
+.home-btn {
+  display: inline-block;
+  margin: 0 auto;
+  background: linear-gradient(to right, var(--primary-color), var(--primary-color));
+  color: var(--accent-color);
+  border: none;
+  padding: 0.75rem 0rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 120px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.home-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.home-btn:active {
+  transform: translateY(0);
+}

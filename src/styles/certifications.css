@@ -25,21 +25,21 @@
 
 /* Custom colors for each certification type */
 #aws-certs h3 {
-  border-left-color: #ff9900; /* AWS orange */
+  border-left-color: #ff9900;
 }
 
 #terraform-certs h3 {
-  border-left-color: #7b42bc; /* HashiCorp purple */
+  border-left-color: #7b42bc;
 }
 
 #docker-certs h3 {
-  border-left-color: #0db7ed; /* Docker blue */
+  border-left-color: #0db7ed;
 }
 
 #kubernetes-certs h3 {
-  border-left-color: #326ce5; /* Kubernetes blue */
+  border-left-color: #326ce5;
 }
 
 #tensorflow-certs h3 {
-  border-left-color: #ff6f00; /* TensorFlow orange */
+  border-left-color: #ff6f00;
 }
