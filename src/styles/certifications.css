@@ -4,7 +4,16 @@
 
 /* Section styling */
 .cert-section {
-  padding: 10px 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.cert-entries {
+  background-color: var(--primary-color);
+  border: 4px solid var(--accent-color);
+  padding: 0px 0px 0px 0px;
+  margin-bottom: 0px;
+  border-radius: 8px;
 }
 
 /* Horizontal dividers between sections */
@@ -17,7 +26,7 @@
 
 /* Section headings */
 .cert-section h3 {
-  color: #333;
+  color: var(--primary-font-color);
   margin-bottom: 20px;
   border-left: 4px solid #0066cc;
   padding-left: 10px;

@@ -1,7 +1,64 @@
 /* A style sheet, defining styling for components local to the About page. */
+@import url("./_variables.css");
+
 .section-divider {
   border: 0;
   height: 3px;
   background-color: var(--accent-color);
-  margin: 0px 0;
+  margin: 20px 0px;
 }
+
+.education-entry {
+  background-color: var(--primary-color);
+  border: 4px solid var(--accent-color);
+  padding: 10px 0px 20px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.education-columns {
+  display: flex;
+  align-items: center;
+  gap: 5vh;
+}
+
+.education-left {
+  width: 20%; /* Increased from 20% to accommodate content */
+  flex-shrink: 0; /* Prevent shrinking */
+},
+
+.education-right {
+  width: 80%; /* Increased from 20% to fill remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.edu-header {
+  margin-bottom: 10px;
+}
+
+.edu-header h3,
+.edu-header p {
+  margin: 0;           /* Removes default bottom margin */
+  line-height: 1.2;    /* Adjust line spacing — tweak as needed (e.g. 1.1, 1.0) */
+}
+
+.edu-logo img {
+  height: auto;              /* Set to desired constant height */
+  width: 12vw;               /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;            /* Horizontally center the image */
+}
+
+.edu-logo {
+  display: flex;
+  justify-content: center;   /* Horizontal centering */
+  align-items: center;       /* Vertical centering */
+  height: auto;             /* Control the vertical space it takes */
+}
+
+.edu-details {
+  padding-left: 5vh;
+  margin: 0;
+  }

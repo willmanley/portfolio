@@ -23,7 +23,6 @@
 
 .social-icon:hover {
   transform: scale(1.1);
-  background-color: var(--secondary-color);
 }
 
 .social-icon img {
@@ -33,7 +32,6 @@
   filter: brightness(0) invert(1);
 }
 
-/* SVG color control */
 .social-icon svg {
   width: 48px;
   height: 48px;

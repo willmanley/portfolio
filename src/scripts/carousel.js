@@ -25,10 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
       updateCarousel();
     });
 
-    // Responsive handling
     window.addEventListener("resize", updateCarousel);
 
-    // Initial positioning
     updateCarousel();
   });
 });
